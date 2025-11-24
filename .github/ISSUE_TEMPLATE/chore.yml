@@ -1,0 +1,27 @@
+name: "🔧 기타 작업 (Chore)"
+description: "빌드, 패키지 매니저 설정 등 소스 코드 외적인 작업을 요청합니다."
+title: "[CHORE] "
+labels: ["chore"]
+body:
+  - type: textarea
+    attributes:
+      label: 🔧 작업 내용
+      description: 어떤 작업을 수행해야 하나요?
+      placeholder: "requirements.txt 의존성 버전을 업데이트해야 합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧐 작업 이유
+      description: 이 작업이 왜 필요한가요?
+      placeholder: "보안 취약점이 발견된 라이브러리가 있습니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 내용
+      description: 할 일을 체크박스 형태로 작성해주세요.
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+name: "♻️ 리팩토링 (Refactoring)"
+description: "기능 변경 없이 코드 구조를 개선하거나 최적화합니다."
+title: "[REFACTOR] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    attributes:
+      label: ♻️ 리팩토링 대상
+      description: 어떤 코드나 모듈을 개선하고 싶으신가요?
+      placeholder: "HwpHandler 클래스의 open 메서드가 너무 복잡합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧐 개선 이유
+      description: 왜 리팩토링이 필요한가요? (가독성, 성능, 유지보수 등)
+      placeholder: "예외 처리 로직이 섞여 있어 가독성이 떨어집니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🛠️ 개선 방안
+      description: 어떻게 개선할 계획인가요?
+      placeholder: "예외 처리 로직을 별도 private 메서드로 분리합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 내용
+      description: 할 일을 체크박스 형태로 작성해주세요.
+    validations:
+      required: true

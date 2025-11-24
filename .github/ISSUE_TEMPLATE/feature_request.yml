@@ -1,0 +1,53 @@
+name: "✨ 기능 제안 (Feature Request)"
+description: "프로젝트에 새로운 아이디어나 개선 사항을 제안해 주세요."
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    attributes:
+      label: 💡 요약 (Summary)
+      description: 제안하시는 기능을 한 줄로 요약해 주세요.
+      placeholder: 예: HWPX 파일 지원 기능 추가
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🧐 제안 배경 (Motivation)
+      description: 이 기능이 왜 필요한가요? 어떤 문제를 해결하나요?
+      placeholder: |
+        현재는 HWP 파일만 지원하는데, 일부 정책은 HWPX를 사용해서 불편합니다.
+        이 기능을 통해 더 많은 정책 서류를 자동화할 수 있습니다.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🛠️ 제안 내용 (Proposed Solution)
+      description: 기능이 어떻게 작동해야 하는지 구체적으로 설명해 주세요.
+      placeholder: |
+        1. HwpHandler 클래스에 open_hwpx 메서드 추가
+        2. 저장 시 포맷 옵션에 "HWPX" 추가
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 내용 (Tasks)
+      description: 할 일을 체크박스 형태로 작성해주세요.
+      placeholder: |
+        - [ ] HWPX 파일 로드 테스트
+        - [ ] 누름틀 삽입 기능 호환성 확인
+        - [ ] 저장 기능 구현
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🔄 대안 (Alternatives Considered)
+      description: 이 문제를 해결하기 위한 다른 방법은 없었나요?
+
+  - type: textarea
+    attributes:
+      label: 📝 기타 (Additional Context)
+      description: 스크린샷, 관련 정책 문서 링크 등 도움이 될 만한 자료를 첨부해 주세요.

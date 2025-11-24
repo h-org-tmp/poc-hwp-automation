@@ -1,0 +1,69 @@
+name: "🐛 버그 신고 (Bug Report)"
+description: "버그를 신고하여 프로젝트 개선을 도와주세요."
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: 🐛 버그 설명 (Description)
+      description: 어떤 버그인지 명확하고 간결하게 설명해 주세요.
+      placeholder: "파일 저장 시 에러가 발생합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 👣 재현 방법 (Steps to Reproduce)
+      description: 버그를 재현하는 방법을 단계별로 설명해 주세요.
+      placeholder: |
+        1. 'run_poc.py' 실행
+        2. 샘플 파일 생성 확인
+        3. 콘솔에 에러 메시지 출력됨
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🤔 예상되는 동작 (Expected Behavior)
+      description: 원래 어떻게 동작해야 하는지 설명해 주세요.
+      placeholder: "에러 없이 'result.hwp' 파일이 생성되어야 합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 😯 실제 동작 (Actual Behavior)
+      description: 실제로 어떻게 동작했는지 설명해 주세요.
+      placeholder: "프로세스가 멈추고 응답이 없습니다."
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 💻 OS
+      description: 운영체제 정보를 입력해 주세요.
+      placeholder: Windows 10
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 🐍 Python 버전
+      description: 사용 중인 Python 버전을 입력해 주세요.
+      placeholder: 3.9.1
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 📄 한컴오피스 버전
+      description: 설치된 한글 프로그램 버전을 입력해 주세요.
+      placeholder: 한글 2022
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📜 로그 / 스크린샷 (Logs / Screenshots)
+      description: 에러 로그나 스크린샷이 있다면 첨부해 주세요.
+      render: shell
