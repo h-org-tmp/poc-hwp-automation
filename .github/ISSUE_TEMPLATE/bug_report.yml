@@ -1,6 +1,6 @@
 name: "🐛 버그 신고 (Bug Report)"
 description: "버그를 신고하여 프로젝트 개선을 도와주세요."
-title: "[BUG] "
+title: "[Bug] "
 labels: ["bug"]
 body:
   - type: textarea

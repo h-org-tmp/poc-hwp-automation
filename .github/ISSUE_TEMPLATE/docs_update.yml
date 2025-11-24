@@ -1,6 +1,6 @@
 name: "📚 문서 수정 (Documentation)"
 description: "문서(README, 가이드 등)의 수정이나 보완을 요청합니다."
-title: "[DOCS] "
+title: "[Docs] "
 labels: ["documentation"]
 body:
   - type: textarea

@@ -1,6 +1,6 @@
 name: "♻️ 리팩토링 (Refactoring)"
 description: "기능 변경 없이 코드 구조를 개선하거나 최적화합니다."
-title: "[REFACTOR] "
+title: "[Refactor] "
 labels: ["refactor"]
 body:
   - type: textarea
